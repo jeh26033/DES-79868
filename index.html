@@ -1,0 +1,62 @@
+<style>
+#qfilter-tabs {display:flex;}
+#qfilter-tabs li {display:inline-flex; flex-grow:1;}
+#qfilter-tabs li.active {margin-bottom: -1px;}
+#qfilter-tabs li.active a {color: #C3002F; border-bottom: 0px; background-color: white;}
+#qfilter-tabs li:first-child {padding-left:0px;}
+#qfilter-tabs li:last-child {padding-right:0px;}
+#qfilter-tabs li a {color:white; border-radius:6px 6px 0px 0px;}
+.qfilter-selected {background-color: black!important; color:white!important; border-color:black!important;}
+#qfilter-buttons {border:1px solid #C3002F;}
+@media (max-width:767px) {
+    #qfilter-tabs li {display:flex;}
+}
+</style>
+<div class="Quick Filter">
+    <div class="container pad-vert-2x">
+        <div class="fancyWordCenter">
+            <h2 class="h1 clearfix margin-top-x margin-bottom_5x"><span class="fancyLabel">Quick </span><span class="fancyWord" data-words="Filter?,Search?">Filter?</span></h2>
+        </div>
+        <ul id="qfilter-tabs" class="text-center margin-x list-inline" role="tablist">
+            <li class="active">
+                <a href="#qfilter-bodystyle" class="btn btn-cta btn-block" role="tab" data-toggle="tab">Bodystyle</a>
+            </li>
+            <li class="">
+                <a href="#qfilter-fueltype" class="btn btn-cta btn-block" role="tab" data-toggle="tab">Fueltype</a>
+            </li>
+            <li class="">
+                <a href="#qfilter-extcolor" class="btn btn-cta btn-block" role="tab" data-toggle="tab">Exterior Color</a>
+            </li>
+            <li class="">
+                <a href="#qfilter-features" class="btn btn-cta btn-block" role="tab" data-toggle="tab">Features</a>
+            </li>
+        </ul>
+        <div id="qfilter-buttons" class="tab-content text-center pad-vert-1x">
+            <div class="tab-pane fade active in" id="qfilter-bodystyle">
+                <a class="btn btn-default qfilter-option" data-filter="bodystyle" data-value="4D Sedan">Sedan</a>
+                <a class="btn btn-default qfilter-option" data-filter="bodystyle" data-value="coupe">Coupe</a>
+                <a class="btn btn-default qfilter-option" data-filter="bodystyle" data-value="truck">Truck</a>
+                <a class="btn btn-default qfilter-option" data-filter="bodystyle" data-value="crossover">Crossover</a>
+                <a class="btn btn-default qfilter-option" data-filter="bodystyle" data-value="van">Van</a>
+            </div>
+            <div class="tab-pane fade" id="qfilter-fueltype">
+                <a class="btn btn-default qfilter-option" data-filter="fueltype" data-value="gasoline">Gasoline</a>
+                <a class="btn btn-default qfilter-option" data-filter="fueltype" data-value="electric">Electric</a>
+                <a class="btn btn-default qfilter-option" data-filter="fueltype" data-value="hybrid">Hybrid</a>
+            </div>
+            <div class="tab-pane fade" id="qfilter-extcolor">
+                <a class="btn btn-default qfilter-option" data-filter="extcolor" data-value="green">green</a>
+                <a class="btn btn-default qfilter-option" data-filter="extcolor" data-value="blue">Blue</a>
+                <a class="btn btn-default qfilter-option" data-filter="extcolor" data-value="Orange">Orange</a>
+                <a class="btn btn-default qfilter-option" data-filter="extcolor" data-value="Silver">Silver</a>
+            </div>
+            <div class="tab-pane fade" id="qfilter-features">
+                <a class="btn btn-default qfilter-option" data-filter="features" data-value="heated seats">Heated Seats</a>
+                <a class="btn btn-default qfilter-option" data-filter="features" data-value="leather seats">Leather Seats</a>
+                <a class="btn btn-default qfilter-option" data-filter="features" data-value="cruise control">Cruise Control</a>
+                <a class="btn btn-default qfilter-option" data-filter="features" data-value="sunroof">sunroof</a>
+            </div>
+        </div>
+        <a href="searchall.aspx" class="btn btn-main margin-top-1x qfilter-submit pull-right">Search</a>
+    </div>
+</div>
